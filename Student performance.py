@@ -57,7 +57,7 @@ print("Passing: %d out of %d (%.2f%%)" % (np.sum(d_pass), len(d_pass), 100*float
 
 # fit a decision tree
 from sklearn import tree
-t = tree.DecisionTreeClassifier(criterion="entropy", max_depth=5)
+t = tree.DecisionTreeClassifier(criterion="entropy", max_depth=2)
 t = t.fit(d_train_att, d_train_pass)
 
 
